@@ -11,4 +11,16 @@
 	h1{text-align: center;}
 	h3{text-align: center;}
 	h3{font-family:'Times New Roman', Times, serif; font-size: large;}
+	input{color: black;
+		float: right;
+		}
+	button{color: black;
+		width: 50px;
+		height: 80%;
+		border: 0px;
+		outline: none;
+		float: right;
+		}
+
+	a{float: right;}
 	

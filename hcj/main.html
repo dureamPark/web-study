@@ -2,15 +2,52 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>일단 쇼핑몰임</title>
+	<title>쇼핑스토리</title>
 	<link href="stylesheet.css" type="text/css" rel="stylesheet">
+
+	<script>
+		
+		function account(height, size) {
+		
+		this.height = height; 
+		this.fit = fit; 
+		this.size = size; 
+		
+		
+		this.inputdata = function (height, size) { return this.fit; }
+		this.showfit = function (fit) {
+				if(this.height>=180||size>=34){
+					return "big size";
+				}
+				else if(this.height>=170||size>=28){
+					return "normal size";
+				}
+				else{
+					return "small size";
+				}
+		 } 
+	
+		
+		}
+		</script>
 </head>
 <body>
 <header>
-
+<div>
+	<input type="text" placeholder="검색어 입력">
+	<button onclick="action()">검색</button>
+	<!-- <button type="button">검색</button> -->
+</div>
+<script>
+	i=0;
+	function action(){
+		alert("아직 없는 기능입니다.");
+	}
+</script>
 <div style="background-image: url('https://images.unsplash.com/photo-1540221652346-e5dd6b50f3e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1769&q=80')">
 <div style="padding: 20px;", style="float: inline-start;">
-<h1>일단 쇼핑몰임</h1><h4>검색</h4>
+<h1>일단 쇼핑몰임</h1>
+
 </div>
 <div style="padding: 40px;">
 
@@ -19,16 +56,16 @@
 
 
 <h3>
-		<a href="#아웃터">아웃터로 가기</a>
+		<a href="#아웃터">아웃터로 가기<br></a>
 </h3>
 <h3>
-		<a href="#상의">상의로 가기</a>
+		<a href="#상의">상의로 가기<br></a>
 </h3>
 <h3>
-		<a href="#하의">하의로 가기</a>
+		<a href="#하의">하의로 가기<br></a>
 </h3>
 <h3>
-		<a href="#신발">신발로 가기</a>
+		<a href="#신발">신발로 가기<br></a>
 </h3>
 
 
@@ -87,5 +124,12 @@
 </div>
 </div>
 </section>
+<script>
+	// let account=prompt("키와 사이즈를 입력하세요.",height,size);
+	// if (account==null){
+	// 	document.write("키와 사이즈를 입력을 취소합니다.");
+	// }
+	// else if(account)
+</script>
 </body>
 </html>
