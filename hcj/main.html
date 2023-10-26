@@ -3,9 +3,15 @@
 <head>
 	<meta charset="utf-8">
 	<title>쇼핑스토리</title>
+	<script>
+		function add(){
+			let p=document.getElementById("firstP");
+			p.innerHTML="쇼핑+토이스토리<img src='1.png'>를 합친 사이트로 특정 시간대에 사이트의 모습이 달라집니다.";
+		}
+	</script>
 	<link href="stylesheet.css" type="text/css" rel="stylesheet">
 
-	<script>
+	<!-- <script>
 		
 		function account(height, size) {
 		
@@ -29,10 +35,11 @@
 	
 		
 		}
-		</script>
+		</script> -->
 </head>
 <body>
 <header>
+	
 <div>
 	<input type="text" placeholder="검색어 입력">
 	<button onclick="action()">검색</button>
@@ -46,14 +53,13 @@
 </script>
 <div style="background-image: url('https://images.unsplash.com/photo-1540221652346-e5dd6b50f3e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1769&q=80')">
 <div style="padding: 20px;", style="float: inline-start;">
-<h1>일단 쇼핑몰임</h1>
+<h1>쇼핑스토리</h1>
 
 </div>
 <div style="padding: 40px;">
 
 <a href="file:///C:/web/hcj/login.html">로그인</a>
 <a href="file:///C:/web/hcj/sign.html">회원가입</a>
-
 
 <h3>
 		<a href="#아웃터">아웃터로 가기<br></a>
@@ -75,10 +81,15 @@
 
 <hr>
 
+
 <section>
 <ul>
 <div style="padding: 40px;">
 <div style="font-size: x-large;">
+	<h3>아래 내용을 클릭하면 설명이 나옵니다.</h3>
+	<p id="firstP" style="color:blue" onclick="add()">
+	설명이 궁금하시면 <span style="color:red">쇼핑스토리가 무엇인가요?</span>
+	</p>
 <details>
 	<summary> 아웃터 <a id="아웃터"></a></summary>
 	<ul>
@@ -123,6 +134,113 @@
 
 </div>
 </div>
+
+<script>
+	function change() {
+	let spanArray = document.getElementsByTagName("span");
+	for(let i=0; i<spanArray.length; i++) {
+	var span = spanArray[i];
+	span.style.color = "rgb(165, 84, 206)";
+	span.style.fontSize = "20px";
+	}
+	}
+	</script>
+	<hr>
+	<h4>다음 내용에서 '종강'을 모두 찾으시오.</h4>
+	<h5><button onclick="change()">정답을 보고 싶으시면 누르세요</button></h5>
+	<hr>
+	<h6>개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강<br>
+		개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강<br>
+		개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강<br>
+		개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강<br>
+		개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강<br>
+		개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강<br>
+		개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강<br>
+		개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강<br>
+		개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강<br>
+		개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강<br>
+		개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강<br>
+		개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강<br>
+		개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강<br>
+		개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강<br>
+		개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강<br>
+		개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강<br>
+		개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강<br>
+		개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강<br>
+		개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강<br>
+		개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강<br>
+		개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강<br>
+		개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강<br>
+		개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강<br>
+		개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강<br>
+		개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강<br>
+		개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강<br>
+		개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강<br>
+		개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강<br>
+		개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강<br>
+		개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강<br>
+		개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강<br>
+		.<br>
+		.<br>
+		.<br>
+		.<br>
+		.<br>
+		.<br>
+		.<br>
+		.<br>
+		.<br>
+		.<br>
+		.<br>
+		.<br>
+		.<br>
+		.<br>
+		.<br>
+		.<br>
+		.<br>
+		.<br>
+		.<br>
+		.<br>
+		.<br>
+		.<br>
+		.<br>
+		.<br>
+		.<br>
+		.<br>
+		.<br>
+		.<br>
+		.<br>
+		.<br>
+		.<br>
+		.<br>
+		.<br>
+		.<br>
+		.<br>
+		.<br>
+		.<br>
+		.<br>
+		.<br>
+		.<br>
+		.<br>
+		.<br>
+		.<br>
+		.<br>
+		.<br>
+		네 그렇습니다. '<span>종강</span>'이 안 보입니다..
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		
+	</h6>
 </section>
 <script>
 	// let account=prompt("키와 사이즈를 입력하세요.",height,size);

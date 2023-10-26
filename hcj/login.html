@@ -11,6 +11,13 @@
 <a href="file:///C:/web/hcj/sign.html">회원가입</a>
 </div>
 <script>
+function change(){
+    let span = document.getElementById("gamebutton");
+    span.style.backgroundColor="black";
+    span.style.color="red";
+    span.style.fontSize="30px";
+    span.style.margin="20px";
+}
 let now=new Date();
 document.write("접속 시간 : " + now.toUTCString() + "<br>");
 
@@ -23,6 +30,10 @@ else{
 }
 </script>
 <hr>
+<p style="color:black">
+    <span id="gamebutton" style="color:red">게임을 시작하시겠습니까?</span>
+</p>
+<input type="button" value="GameStart" onclick="change()">
 <div style="padding: 40px;">
 <form name="fo" method="get">
 <label>사용자 ID : <input type="text"
