@@ -4,6 +4,19 @@
 	<meta charset="utf-8">
 	<title>쇼핑스토리</title>
 	<script>
+		function hideMenu(){
+			alert("오른쪽 클릭 금지");
+			return false;
+		}
+		document.oncontextmenu=hideMenu;
+		function query(){
+			let ret=confirm("네이버로 ㄱ?");
+			return ret;
+		}
+		function noAction(e){
+			e.preventDefault();
+		}
+
 		function add(){
 			let p=document.getElementById("firstP");
 			p.innerHTML="쇼핑+토이스토리<img src='1.png'>를 합친 사이트로 특정 시간대에 사이트의 모습이 달라집니다.";
@@ -39,7 +52,10 @@
 </head>
 <body>
 <header>
-	
+	<a href="http://www.naver.com" onclick="return query()">네이버로 이동할지 물어보는 링크</a>
+<hr>
+
+
 <div>
 	<input type="text" placeholder="검색어 입력">
 	<button onclick="action()">검색</button>
@@ -136,6 +152,18 @@
 </div>
 
 <script>
+	let p;
+	function init(){
+		p=document.getElementById("p");
+		p.addEventListener("mouseover",over);
+		p.addEventListener("mouseout",out);
+	}
+	function over(){
+		p.style.backgroundColor="teal";
+	}
+	function out(){
+		p.style.backgroundColor="beige";
+	}
 	function change() {
 	let spanArray = document.getElementsByTagName("span");
 	for(let i=0; i<spanArray.length; i++) {
@@ -145,8 +173,11 @@
 	}
 	}
 	</script>
+	<body onload="init()">
 	<hr>
-	<h4>다음 내용에서 '종강'을 모두 찾으시오.</h4>
+	
+	<p id="p">다음 내용에서 '종강'을 모두 찾으시오.</p>
+	</body>
 	<h5><button onclick="change()">정답을 보고 싶으시면 누르세요</button></h5>
 	<hr>
 	<h6>개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강개강<br>

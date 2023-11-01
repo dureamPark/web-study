@@ -10,7 +10,13 @@
 <h1>회원가입창임</h1><h4>검색</h4>
 <a href="file:///C:/web/hcj/login.html">로그인</a>
 </div>
-<script>let now=new Date();
+<script>
+    function checkFilled(obj){
+        if(obj.value==""){
+            obj.focus();
+        }
+    }
+    let now=new Date();
     document.write("접속 시간 : " + now.toUTCString() + "<br>");
     if(18<=now.getHours()&&now.getHours()<=24){
         document.body.style.backgroundColor="black";
@@ -22,13 +28,15 @@
 </script>
 <hr>
 <div><strong>고객님의 개인정보는 보호 받을 수 없습니다. 그러므로 신중하게 회원가입하십쇼.</strong></div>
-
 <div style="padding: 40px;">
-<form name="fo" method="get">
-<label>가입하실 ID : <input type="text"
-size="15" value=""></label><br>
-<label for="pass">비밀번호 입력: </label><input id="pass" type="password"
-size="15" value="">
+<body onload="document.getElementById('name').focus();">
+<p>회원가입을 하지 않고는 다른 입력창으로 이동할 수 없습니다.</p>
+
+<form>
+    가입하실 ID : <input type="text" id="name" onblur="checkFilled(this)">
+    <p>비밀번호 입력 : <input type="text">
+</form>
+
 <input type="button" value="회원가입 완료" onclick="action()">
 <script>
     function action(){
@@ -37,5 +45,6 @@ size="15" value="">
 </script>
 </form>
 </div>
+</body>
 </body>
 </html>
